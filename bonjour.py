@@ -4,6 +4,7 @@ from telegram.ext import Updater, CommandHandler
 API_TOKEN = os.environ.get('API_TOKEN')
 # Définir la fonction pour la commande /bonjour
 def bonjour(update, context):
+    print("Commande /bonjour détectée !") 
     context.bot.send_message(chat_id=update.effective_chat.id, text="Bonjour ! Bienvenue sur ce bot.")
 
 # Mettre en place le bot
